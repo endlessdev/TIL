@@ -39,4 +39,7 @@ $.ajax() 메서드 역시 XMLHttpRequest 객체를 사용합니다.
 		 - AJAX 통신을 하기 전, jqXHR를 수정할 수 있습니다.<br>보통 xhr에 setRequestHeader 메서드로 헤더값을 전송하거나, 통신 하기 전의 이벤트를 핸들링할때 콜백함수로 사용됩니다.
 	 - **complete (Function( jqXHR jqXHR, String textStatus))**
 		 - AJAX 통신이 끝난 후 발생되는 이벤트를 핸들링 할 수 있도록 콜백함수를 제공합니다. 
-	 - **contentType**
+	 - **contentType (기본값: application/x-www-form-urlencoded; charset=UTF-8)**
+
+		  - 데이터를 서버로 전송할때, 이 content type 을 사용합니다. 기본값은 `application/x-www-form-urlencoded; charset=UTF-8` 이며, 대부분의 경우 괜찮다.
+	 - ****
